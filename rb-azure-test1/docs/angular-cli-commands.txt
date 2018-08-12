@@ -6,3 +6,6 @@ az appservice plan create --name rb-azure-test-plan --resource-group rb-azure-te
 
 // then, create an appService within the new appService plan
 az webapp create --resource-group rb-azure-test-resource-group --name rb-azure-test-app-service --plan rb-azure-test-plan
+
+// swap slots, staging to production
+az webapp deployment slot swap --resource-group rb-azure-test-resource-group --name rb-azure-test-app-service --slot staging --target-slot production
