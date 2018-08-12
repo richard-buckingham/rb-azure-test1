@@ -4,15 +4,24 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using rb_azure_test1.Models;
 
 namespace rb_azure_test1.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IConfiguration configuration;
+
+        public HomeController(IConfiguration configuration)
+        {
+            this.configuration = configuration;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var model = configuration["greeting"];
+            return View("Index", model);
         }
 
         public IActionResult About()
