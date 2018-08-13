@@ -24,11 +24,6 @@ namespace rb_azure_test1.Controllers
             return View("Index", model);
         }
 
-        public IActionResult Test()
-        {
-            throw new InvalidOperationException("this feature is not supported");
-        }
-
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

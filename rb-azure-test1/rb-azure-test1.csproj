@@ -3,18 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-rb_azure_test1-C9BDD656-A782-4264-B86E-83C84C846526</UserSecretsId>
-    <ApplicationInsightsResourceId>/subscriptions/f35e5cc9-4743-4795-87a7-73507467307a/resourcegroups/rb-azure-test-resource-group/providers/microsoft.insights/components/rb-azure-test-app-service-app-insights</ApplicationInsightsResourceId>
-    <ApplicationInsightsAnnotationResourceId>/subscriptions/f35e5cc9-4743-4795-87a7-73507467307a/resourcegroups/rb-azure-test-resource-group/providers/microsoft.insights/components/rb-azure-test-app-service-app-insights</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" PrivateAssets="All" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>

@@ -19,7 +19,6 @@ namespace rb_azure_test1
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseApplicationInsights()
                 .UseStartup<Startup>();
     }
 }
